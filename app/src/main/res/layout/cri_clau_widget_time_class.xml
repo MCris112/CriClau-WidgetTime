@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/Widget.CriClauWidgetTime.AppWidget.Container"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_widget"
+    android:padding="@dimen/criclau_widget_padding"
+    android:theme="@style/Theme.CriClauWidgetTime.AppWidgetContainer">
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:layout_centerVertical="true"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Claudia"
+            android:textColor="@color/white" />
+
+        <TextClock
+            android:id="@+id/clock_claudia"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="6dp"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            android:timeZone="Europe/Madrid" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cristopher"
+            android:textColor="@color/white" />
+
+        <TextClock
+            android:id="@+id/clock_cristopher"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textSize="34sp"
+            android:timeZone="America/Lima" />
+
+    </LinearLayout>
+</RelativeLayout>
